@@ -10,49 +10,49 @@ const chatData: Chat[] = [
   {
     avatar: UserOne,
     name: 'Devid Heilo',
-    text: 'How are you?',
+    text: 'Pac-Man',
     time: 12,
-    textCount: 3,
+    textCount: 1,
     color: '#10B981',
   },
   {
     avatar: UserTwo,
     name: 'Henry Fisher',
-    text: 'Waiting for you!',
-    time: 12,
-    textCount: 0,
+    text: 'Snoopy Run',
+    time: 2,
+    textCount: 2,
     color: '#DC3545',
   },
   {
     avatar: UserFour,
     name: 'Jhon Doe',
-    text: "What's up?",
+    text: "Running With Peeps",
     time: 32,
-    textCount: 0,
+    textCount: 3,
     color: '#10B981',
   },
   {
     avatar: UserFive,
     name: 'Jane Doe',
-    text: 'Great',
+    text: 'Running With Peeps',
     time: 32,
-    textCount: 2,
+    textCount: 4,
     color: '#FFBA00',
   },
   {
     avatar: UserOne,
     name: 'Jhon Doe',
-    text: 'How are you?',
+    text: 'Godzilla X Kong',
     time: 32,
-    textCount: 0,
+    textCount: 5,
     color: '#10B981',
   },
   {
     avatar: UserThree,
     name: 'Jhon Doe',
-    text: 'How are you?',
+    text: 'Spring Has Sprung',
     time: 32,
-    textCount: 3,
+    textCount: 6,
     color: '#FFBA00',
   },
 ];
@@ -61,7 +61,7 @@ const ChatCard = () => {
   return (
     <div className="col-span-12 rounded-lg border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <h4 className="mb-6 px-7.5 text-xl font-semibold text-black dark:text-white">
-        Chats
+        Leaderboard
       </h4>
 
       <div>

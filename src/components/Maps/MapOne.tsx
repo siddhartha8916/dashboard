@@ -12,18 +12,18 @@ const MapOne = () => {
 
       regionStyle: {
         initial: {
-          fill: '#C8D0D8',
+          fill: '#DDDADA',
         },
         hover: {
           fillOpacity: 1,
-          fill: '#3056D3',
+          fill: '#ADA4A5',
         },
       },
       regionLabelStyle: {
         initial: {
           fontFamily: 'Satoshi',
           fontWeight: 'semibold',
-          fill: '#fff',
+          fill: '#000',
         },
         hover: {
           cursor: 'pointer',
@@ -44,7 +44,7 @@ const MapOne = () => {
   return (
     <div className="col-span-12 rounded-lg border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7">
       <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
-        Region labels
+        Upcoming Events in Apr-24
       </h4>
       <div id="mapOne" className="mapOne map-btn h-90"></div>
     </div>

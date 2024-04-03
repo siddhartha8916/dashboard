@@ -8,42 +8,58 @@ import BrandFive from '../../images/brand/brand-05.svg';
 const brandData: BRAND[] = [
   {
     logo: BrandOne,
-    name: 'Google',
-    visitors: 3.5,
-    revenues: '5,768',
-    sales: 590,
+    name: 'Pac-Man',
+    visitors: 'Jan 15',
+    revenues: 'Feb 15',
+    sales: 4.9,
     conversion: 4.8,
   },
   {
     logo: BrandTwo,
-    name: 'Twitter',
-    visitors: 2.2,
-    revenues: '4,635',
-    sales: 467,
+    name: 'Snoopy Run',
+    visitors: 'Feb 1',
+    revenues: 'Mar 2',
+    sales: 4.8,
     conversion: 4.3,
   },
   {
     logo: BrandThree,
-    name: 'Github',
-    visitors: 2.1,
-    revenues: '4,290',
-    sales: 420,
+    name: 'Running With Peeps',
+    visitors: 'Mar 16',
+    revenues: 'Apr 15',
+    sales: 4.7,
     conversion: 3.7,
   },
   {
     logo: BrandFour,
-    name: 'Vimeo',
-    visitors: 1.5,
-    revenues: '3,580',
-    sales: 389,
+    name: 'Godzilla X Kong',
+    visitors: 'Apr 14',
+    revenues: 'May 12',
+    sales: 4.7,
     conversion: 2.5,
   },
   {
     logo: BrandFive,
-    name: 'Facebook',
-    visitors: 3.5,
-    revenues: '6,768',
-    sales: 390,
+    name: 'Spring Has Sprung',
+    visitors: 'Mar 21',
+    revenues: 'Apr 21',
+    sales: 4.6,
+    conversion: 4.2,
+  },
+  {
+    logo: BrandFive,
+    name: 'A Beautiful Run In the Neighbourhood',
+    visitors: 'Jan 23',
+    revenues: 'Feb 23',
+    sales: 4.5,
+    conversion: 4.2,
+  },
+  {
+    logo: BrandFive,
+    name: 'Sweethearts',
+    visitors: 'Apr 1',
+    revenues: 'May 1',
+    sales: 4.1,
     conversion: 4.2,
   },
 ];
@@ -52,34 +68,34 @@ const TableOne = () => {
   return (
     <div className="rounded-lg border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
       <h4 className="mb-6 text-xl font-semibold text-black dark:text-white">
-        Top Channels
+        Top Events
       </h4>
 
       <div className="flex flex-col">
         <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
           <div className="p-2.5 xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Source
+            Event Name
             </h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Visitors
+              Start Date
             </h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Revenues
+              End Date
             </h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Sales
+              Ratings
             </h5>
           </div>
           <div className="hidden p-2.5 text-center sm:block xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Conversion
+            Growth
             </h5>
           </div>
         </div>
@@ -94,20 +110,18 @@ const TableOne = () => {
             key={key}
           >
             <div className="flex items-center gap-3 p-2.5 xl:p-5">
-              <div className="flex-shrink-0">
-                <img src={brand.logo} alt="Brand" />
-              </div>
+              
               <p className="hidden text-black dark:text-white sm:block">
                 {brand.name}
               </p>
             </div>
 
             <div className="flex items-center justify-center p-2.5 xl:p-5">
-              <p className="text-black dark:text-white">{brand.visitors}K</p>
+              <p className="text-black dark:text-white">{brand.visitors}</p>
             </div>
 
             <div className="flex items-center justify-center p-2.5 xl:p-5">
-              <p className="text-meta-3">${brand.revenues}</p>
+              <p className="text-black">{brand.revenues}</p>
             </div>
 
             <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
